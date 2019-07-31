@@ -1,0 +1,43 @@
+{
+    "name": "cliveportman/dates",
+    "description": "Adds PHP's datePeriod function for looping through dates",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "dates"
+    ],
+    "support": {
+        "docs": "https://github.com/cliveportman/dates/blob/master/README.md",
+        "issues": "https://github.com/cliveportman/dates/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Clive Portman",
+            "homepage": "https://clive.theportman.co"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "cliveportman\\dates\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Dates",
+        "handle": "dates",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/cliveportman/dates/master/CHANGELOG.md",
+        "components": {
+            "datesService": "cliveportman\\dates\\services\\DatesService"
+        },
+        "class": "cliveportman\\dates\\Dates"
+    }
+}
