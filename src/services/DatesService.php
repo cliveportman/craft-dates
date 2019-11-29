@@ -42,8 +42,9 @@ class DatesService extends Component
         $months = [];
         $months[] = date("r", $month);
         for ($i = 1; $i <= $numberOfMonths; $i++) {
-            $month = strtotime('last month', $month);
-            $months[] = date("r", $month);
+            $months[] = date("Y-m", strtotime( date( 'Y-m-01' )." -$i months"));
+            // $month = strtotime('last month', $month);
+            // $months[] = date("r", $month);
         }
         return $months;
     }

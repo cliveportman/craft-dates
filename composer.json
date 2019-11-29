@@ -2,7 +2,7 @@
     "name": "cliveportman/dates",
     "description": "Adds PHP's datePeriod function for looping through dates",
     "type": "craft-plugin",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "keywords": [
         "craft",
         "cms",
